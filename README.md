@@ -12,26 +12,28 @@ This tool empowers users to embed and extract messages securely within images, u
 
     python3 main.py -em -mf message.txt -cf demo_pic.png -sf stegoimage.png
 
-    - `-em`: Initiates the embedding operation.
-    - `-mf message.txt`: Specifies the file containing the message to be embedded.
-    - `-cf demo_pic.png`: Specifies the cover file (original image) for embedding.
-    - `-sf stegoimage.png`: Specifies the filename for the resulting stego image.
+    - `-em` : Initiates the embedding operation.
+    - `-mf message.txt` : Specifies the file containing the message to be embedded.
+    - `-cf demo_pic.png` : Specifies the cover file (original image) for embedding.
+    - `-sf stegoimage.png` : Specifies the filename for the resulting stego image.
 
 2. Extraction Operation:
 
     python3 main.py -ex -of stegoimage.png -xf decrypt.txt
 
-    - `-ex`: Initiates the extraction operation.
-    - `-of stegoimage.png`: Specifies the stego image file for message extraction.
-    - `-xf decrypt.txt`: Specifies the output file for the extracted message.
+    - `-ex` : Initiates the extraction operation.
+    - `-of stegoimage.png` : Specifies the stego image file for message extraction.
+    - `-xf decrypt.txt` : Specifies the output file for the extracted message.
 
 Note: Do all operations with .png and .txt files only.
 
 ## Usage
 
 1. Clone the Repository:
-    git clone https://github.com/Srichakra-D/Pixel_Cipher.git
-    cd pixel_cipher
+    ```
+     git clone https://github.com/Srichakra-D/Pixel_Cipher.git
+     cd pixel_cipher
+     ```
 
 2. Embedding:
     - Place the message to be embedded in a text file (e.g., `message.txt`).
@@ -65,7 +67,7 @@ Note: Do all operations with .png and .txt files only.
 
 ## Acknowledgments
 
-    Special thanks to the IBM SkillsBuild team for the opportunity and support throughout the Internship.
+Special thanks to the IBM SkillsBuild team for the opportunity and support throughout the Internship.
 
-    Feel free to contribute, report issues, and enhance the capabilities of Pixel Cipher!
+Feel free to contribute, report issues, and enhance the capabilities of Pixel Cipher!
 
