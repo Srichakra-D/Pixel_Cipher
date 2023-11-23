@@ -19,7 +19,7 @@ main_parser.add_argument('--extract','-ex',action='store_true',help='enables ext
 main_parser.add_argument('--messagefile','-mf',help='Input Message file')
 main_parser.add_argument('--coverfile','-cf',help='Input Cover file')
 main_parser.add_argument('--stegofile','-sf',help='output file')
-main_parser.add_argument('--open','-of')
+main_parser.add_argument('--open','-of',help='input file for extracting')
 main_parser.add_argument('--extractfile','-xf',help='extracted file')
 
 args = main_parser.parse_args()
@@ -52,7 +52,7 @@ if args.embed:
 
     cv2.imwrite(f"{stego_file}",img)
 
-    os.system(f"open {stego_file}.jpg")
+    os.system(f"start {stego_file}")
 
 
 
@@ -84,5 +84,5 @@ elif args.extract:
     
     with open(f'{extract_file}', 'w') as file:
         file.write(decoded_message)
-    
-   
+        
+    os.system(f"start {extract_file}")
